@@ -1,0 +1,12 @@
+from tkinter import *
+root = Tk()
+root.geometry("200x300")
+root.title("main")
+l = Label(root, text="this is root window")
+l.pack()
+top = Toplevel()
+top.geometry("180x100")
+top.title("toplevel")
+l2 = Label(top, text="this is top level window")
+l2.pack()
+root.mainloop()
